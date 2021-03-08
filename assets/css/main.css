@@ -192,6 +192,10 @@ input {
 }
 
 @media screen and (max-width: 667px) {
+  .hero-section {
+    padding-top: 120px;
+    padding-bottom: 20px;
+  }
   .hero-section .hero-content .logo-title {
     font-size: 10vmin;
   }
