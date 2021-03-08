@@ -192,13 +192,22 @@
 
     </footer>
     <!-- End Footer -->
-    
+
     <!-- Copyright -->
     <div class="copyright">
         <p>Copyright 2021, Built by <a href="">Muhammad Pauzi</a></p>
     </div>
 
     <!-- Script Test From freeCodeCamp -->
-    <!-- <script src="bundle.js"></script>     -->
+    <script src="bundle.js"></script>   
+    <script>
+        this.addEventListener('scroll',() =>{
+            if(this.scrollY > 0){
+                document.querySelector('.navbar').classList.add('show-shadow')
+            } else {
+                document.querySelector('.navbar').classList.remove('show-shadow')
+            }
+        })
+    </script> 
 </body>
 </html>

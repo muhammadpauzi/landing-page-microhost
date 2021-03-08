@@ -8,6 +8,7 @@
 
 body {
   background-color: #f9f9f9;
+  position: relative;
 }
 
 ul {
@@ -116,6 +117,16 @@ input {
   width: 100%;
   padding: 14px 20px;
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar.show-shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .logo img {
@@ -157,7 +168,8 @@ input {
 
 .hero-section {
   width: 100%;
-  min-height: 344px;
+  padding-top: 25px;
+  min-height: 390px;
   background-color: #5f54ff;
 }
 
