@@ -1,0 +1,54 @@
+.hero-section {
+  width: 100%;
+  min-height: 344px;
+  background-color: $primaryColor;
+
+  .hero-content {
+    // padding-top: 20px;
+
+    .logo-title {
+      font-size: 55px;
+      font-weight: $fontSemibold;
+      color: $whiteColor;
+      margin-bottom: 9px;
+    }
+
+    .subtitle {
+      font-size: 30px;
+      font-weight: $fontRegular;
+      color: $whiteColor;
+      margin-bottom: 30px;
+    }
+
+    .btn-get-started {
+      margin-left: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: $mediaMedium + 100) {
+  .hero-section {
+    .hero-content {
+      // padding-top: 20px;
+
+      .logo-title {
+        font-size: 10vmin;
+      }
+
+      .subtitle {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      #form {
+        flex-direction: column;
+        width: 100%;
+
+        & > input {
+          width: 100%;
+          margin: 5px 0 0 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fontFamily;
+}
+
+body {
+  background-color: $backgroundColor;
+}
+
+// Reset
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: $lineHeight;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+// Style Default
+.flex {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.container {
+  width: 1300px !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding: 5px 10px !important;
+}
+
+.form-input {
+  width: 357px;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 15px 17px;
+  background-color: $whiteColor;
+  transition: 0.3s;
+
+  &:focus {
+    box-shadow: 0 4px 8px rgba($color: #000, $alpha: 0.1);
+  }
+}
+
+.btn {
+  padding: 15px 17px;
+  border-radius: $borderRadius;
+  text-transform: uppercase;
+  font-weight: $fontSemibold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-white {
+  background-color: $whiteColor;
+  color: $primaryColor;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    background-color: darken($color: $whiteColor, $amount: 9);
+  }
+}
+
+.btn-primary {
+  background-color: $primaryColor;
+  color: $whiteColor;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    // background-color: darken($color: $primaryColor, $amount: 9);
+    box-shadow: 0 5px 10px rgba($color: $primaryColor, $alpha: 0.1);
+  }
+}

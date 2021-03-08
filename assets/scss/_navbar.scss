@@ -1,0 +1,41 @@
+.navbar {
+  width: 100%;
+  padding: 14px 20px;
+  background-color: $whiteColor;
+
+  .logo img {
+    width: 100%;
+    display: block;
+  }
+
+  .list-menu .list-item .nav-link {
+    padding: 10px 17px;
+    color: $grayColor;
+    transition: color 0.3s ease-out;
+    font-size: $linkSize;
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}
+
+@media screen and (max-width: $mediaMedium) {
+  .navbar {
+    padding: 14px 0;
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .container {
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .list-menu .list-item .nav-link {
+      font-size: 15px;
+      padding: 5px;
+    }
+  }
+}
